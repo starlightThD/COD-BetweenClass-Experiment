@@ -1,0 +1,212 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Sat Dec 21 08:24:19 2024
+| Host         : DESKTOP-ThD running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file SCPU_TOP_control_sets_placed.rpt
+| Design       : SCPU_TOP
+| Device       : xc7a100t
+-------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |   134 |
+|    Minimum number of control sets                        |   134 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   865 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |   134 |
+| >= 0 to < 4        |   121 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     2 |
+| >= 8 to < 10       |     1 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    10 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             392 |          356 |
+| No           | No                    | Yes                    |            1186 |          495 |
+| No           | Yes                   | No                     |              56 |           47 |
+| Yes          | No                    | No                     |             213 |          188 |
+| Yes          | No                    | Yes                    |              96 |           47 |
+| Yes          | Yes                   | No                     |               8 |            5 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------------------+-------------------------+---------------------------------+------------------+----------------+
+|           Clock Signal           |      Enable Signal      |         Set/Reset Signal        | Slice Load Count | Bel Load Count |
++----------------------------------+-------------------------+---------------------------------+------------------+----------------+
+|  PC_reg[3]_LDC_i_1_n_1           |                         | PC_reg[3]_LDC_i_2_n_1           |                1 |              1 |
+|  U_RF/rf_reg[31][30]_LDC_i_1_n_1 |                         | U_RF/rf_reg[31][30]_LDC_i_2_n_1 |                1 |              1 |
+|  Clk_CPU_BUFG                    |                         | PC_reg[10]_LDC_i_2_n_1          |                1 |              1 |
+|  Clk_CPU_BUFG                    |                         | PC_reg[5]_LDC_i_2_n_1           |                1 |              1 |
+|  Clk_CPU_BUFG                    |                         | PC_reg[9]_LDC_i_2_n_1           |                1 |              1 |
+|  Clk_CPU_BUFG                    |                         | PC_reg[6]_LDC_i_2_n_1           |                1 |              1 |
+|  Clk_CPU_BUFG                    |                         | PC_reg[8]_LDC_i_2_n_1           |                1 |              1 |
+|  Clk_CPU_BUFG                    |                         | PC_reg[7]_LDC_i_2_n_1           |                1 |              1 |
+|  Clk_CPU_BUFG                    |                         | PC_reg[4]_LDC_i_2_n_1           |                1 |              1 |
+|  Clk_CPU_BUFG                    |                         | U_RF/rf_reg[31][13]_LDC_i_1_n_1 |                1 |              1 |
+|  Clk_CPU_BUFG                    |                         | U_RF/rf_reg[31][10]_LDC_i_1_n_1 |                1 |              1 |
+|  Clk_CPU_BUFG                    |                         | U_RF/rf_reg[31][13]_LDC_i_2_n_1 |                1 |              1 |
+|  Clk_CPU_BUFG                    |                         | U_RF/rf_reg[31][14]_LDC_i_2_n_1 |                1 |              1 |
+|  Clk_CPU_BUFG                    |                         | U_RF/rf_reg[31][12]_LDC_i_2_n_1 |                1 |              1 |
+|  Clk_CPU_BUFG                    |                         | U_RF/rf_reg[31][0]_LDC_i_1_n_1  |                1 |              1 |
+|  Clk_CPU_BUFG                    |                         | U_RF/rf_reg[31][0]_LDC_i_2_n_1  |                1 |              1 |
+|  Clk_CPU_BUFG                    |                         | U_RF/rf_reg[31][12]_LDC_i_1_n_1 |                1 |              1 |
+|  Clk_CPU_BUFG                    |                         | U_RF/rf_reg[31][10]_LDC_i_2_n_1 |                1 |              1 |
+|  Clk_CPU_BUFG                    |                         | U_RF/rf_reg[31][14]_LDC_i_1_n_1 |                1 |              1 |
+|  Clk_CPU_BUFG                    |                         | U_RF/rf_reg[31][11]_LDC_i_2_n_1 |                1 |              1 |
+|  Clk_CPU_BUFG                    |                         | U_RF/rf_reg[31][11]_LDC_i_1_n_1 |                1 |              1 |
+|  Clk_CPU_BUFG                    |                         | U_RF/rf_reg[31][25]_LDC_i_2_n_1 |                1 |              1 |
+|  Clk_CPU_BUFG                    |                         | U_RF/rf_reg[31][17]_LDC_i_2_n_1 |                1 |              1 |
+|  Clk_CPU_BUFG                    |                         | U_RF/rf_reg[31][19]_LDC_i_1_n_1 |                1 |              1 |
+|  Clk_CPU_BUFG                    |                         | U_RF/rf_reg[31][20]_LDC_i_1_n_1 |                1 |              1 |
+|  Clk_CPU_BUFG                    |                         | U_RF/rf_reg[31][16]_LDC_i_2_n_1 |                1 |              1 |
+|  Clk_CPU_BUFG                    |                         | U_RF/rf_reg[31][17]_LDC_i_1_n_1 |                1 |              1 |
+|  Clk_CPU_BUFG                    |                         | U_RF/rf_reg[31][24]_LDC_i_2_n_1 |                1 |              1 |
+|  Clk_CPU_BUFG                    |                         | U_RF/rf_reg[31][25]_LDC_i_1_n_1 |                1 |              1 |
+|  Clk_CPU_BUFG                    |                         | U_RF/rf_reg[31][26]_LDC_i_1_n_1 |                1 |              1 |
+|  Clk_CPU_BUFG                    |                         | U_RF/rf_reg[31][1]_LDC_i_1_n_1  |                1 |              1 |
+|  Clk_CPU_BUFG                    |                         | U_RF/rf_reg[31][1]_LDC_i_2_n_1  |                1 |              1 |
+|  Clk_CPU_BUFG                    |                         | U_RF/rf_reg[31][18]_LDC_i_1_n_1 |                1 |              1 |
+|  Clk_CPU_BUFG                    |                         | U_RF/rf_reg[31][16]_LDC_i_1_n_1 |                1 |              1 |
+|  Clk_CPU_BUFG                    |                         | U_RF/rf_reg[31][22]_LDC_i_1_n_1 |                1 |              1 |
+|  Clk_CPU_BUFG                    |                         | U_RF/rf_reg[31][23]_LDC_i_2_n_1 |                1 |              1 |
+|  Clk_CPU_BUFG                    |                         | U_RF/rf_reg[31][26]_LDC_i_2_n_1 |                1 |              1 |
+|  Clk_CPU_BUFG                    |                         | U_RF/rf_reg[31][15]_LDC_i_1_n_1 |                1 |              1 |
+|  Clk_CPU_BUFG                    |                         | U_RF/rf_reg[31][21]_LDC_i_1_n_1 |                1 |              1 |
+|  Clk_CPU_BUFG                    |                         | U_RF/rf_reg[31][19]_LDC_i_2_n_1 |                1 |              1 |
+|  Clk_CPU_BUFG                    |                         | U_RF/rf_reg[31][20]_LDC_i_2_n_1 |                1 |              1 |
+|  Clk_CPU_BUFG                    |                         | U_RF/rf_reg[31][21]_LDC_i_2_n_1 |                1 |              1 |
+|  Clk_CPU_BUFG                    |                         | U_RF/rf_reg[31][18]_LDC_i_2_n_1 |                1 |              1 |
+|  Clk_CPU_BUFG                    |                         | U_RF/rf_reg[31][22]_LDC_i_2_n_1 |                1 |              1 |
+|  Clk_CPU_BUFG                    |                         | U_RF/rf_reg[31][23]_LDC_i_1_n_1 |                1 |              1 |
+|  Clk_CPU_BUFG                    |                         | U_RF/rf_reg[31][24]_LDC_i_1_n_1 |                1 |              1 |
+|  Clk_CPU_BUFG                    |                         | U_RF/rf_reg[31][15]_LDC_i_2_n_1 |                1 |              1 |
+|  Clk_CPU_BUFG                    |                         | U_RF/rf_reg[31][27]_LDC_i_1_n_1 |                1 |              1 |
+|  Clk_CPU_BUFG                    |                         | U_RF/rf_reg[31][8]_LDC_i_1_n_1  |                1 |              1 |
+|  Clk_CPU_BUFG                    |                         | U_RF/rf_reg[31][28]_LDC_i_2_n_1 |                1 |              1 |
+|  Clk_CPU_BUFG                    |                         | U_RF/rf_reg[31][9]_LDC_i_1_n_1  |                1 |              1 |
+|  Clk_CPU_BUFG                    |                         | U_RF/rf_reg[31][3]_LDC_i_2_n_1  |                1 |              1 |
+|  Clk_CPU_BUFG                    |                         | U_RF/rf_reg[31][4]_LDC_i_1_n_1  |                1 |              1 |
+|  Clk_CPU_BUFG                    |                         | U_RF/rf_reg[31][7]_LDC_i_1_n_1  |                1 |              1 |
+|  Clk_CPU_BUFG                    |                         | U_RF/rf_reg[31][30]_LDC_i_2_n_1 |                1 |              1 |
+|  Clk_CPU_BUFG                    |                         | U_RF/rf_reg[31][9]_LDC_i_2_n_1  |                1 |              1 |
+|  Clk_CPU_BUFG                    |                         | U_RF/rf_reg[31][3]_LDC_i_1_n_1  |                1 |              1 |
+|  Clk_CPU_BUFG                    |                         | U_RF/rf_reg[31][29]_LDC_i_1_n_1 |                1 |              1 |
+|  Clk_CPU_BUFG                    |                         | U_RF/rf_reg[31][2]_LDC_i_2_n_1  |                1 |              1 |
+|  Clk_CPU_BUFG                    |                         | U_RF/rf_reg[31][31]_LDC_i_2_n_1 |                1 |              1 |
+|  Clk_CPU_BUFG                    |                         | U_RF/rf_reg[31][6]_LDC_i_1_n_1  |                1 |              1 |
+|  Clk_CPU_BUFG                    |                         | U_RF/rf_reg[31][5]_LDC_i_2_n_1  |                1 |              1 |
+|  Clk_CPU_BUFG                    |                         | U_RF/rf_reg[31][7]_LDC_i_2_n_1  |                1 |              1 |
+|  Clk_CPU_BUFG                    |                         | U_RF/rf_reg[31][27]_LDC_i_2_n_1 |                1 |              1 |
+|  Clk_CPU_BUFG                    |                         | U_RF/rf_reg[31][28]_LDC_i_1_n_1 |                1 |              1 |
+|  Clk_CPU_BUFG                    |                         | U_RF/rf_reg[31][2]_LDC_i_1_n_1  |                1 |              1 |
+|  Clk_CPU_BUFG                    |                         | U_RF/rf_reg[31][29]_LDC_i_2_n_1 |                1 |              1 |
+|  Clk_CPU_BUFG                    |                         | U_RF/rf_reg[31][5]_LDC_i_1_n_1  |                1 |              1 |
+|  Clk_CPU_BUFG                    |                         | U_RF/rf_reg[31][4]_LDC_i_2_n_1  |                1 |              1 |
+|  Clk_CPU_BUFG                    |                         | U_RF/rf_reg[31][8]_LDC_i_2_n_1  |                1 |              1 |
+|  Clk_CPU_BUFG                    |                         | U_RF/rf_reg[31][31]_LDC_i_1_n_1 |                1 |              1 |
+|  Clk_CPU_BUFG                    |                         | U_RF/rf_reg[31][6]_LDC_i_2_n_1  |                1 |              1 |
+|  Clk_CPU_BUFG                    |                         | U_RF/rf_reg[31][30]_LDC_i_1_n_1 |                1 |              1 |
+|  Clk_CPU_BUFG                    | PC[31]_i_1_n_1          | PC_reg[10]_LDC_i_1_n_1          |                1 |              1 |
+|  Clk_CPU_BUFG                    | PC[31]_i_1_n_1          | PC_reg[7]_LDC_i_1_n_1           |                1 |              1 |
+|  Clk_CPU_BUFG                    | PC[31]_i_1_n_1          | PC_reg[4]_LDC_i_1_n_1           |                1 |              1 |
+|  Clk_CPU_BUFG                    | PC[31]_i_1_n_1          | PC_reg[6]_LDC_i_1_n_1           |                1 |              1 |
+|  Clk_CPU_BUFG                    | PC[31]_i_1_n_1          | PC_reg[9]_LDC_i_1_n_1           |                1 |              1 |
+|  Clk_CPU_BUFG                    | PC[31]_i_1_n_1          | PC_reg[5]_LDC_i_1_n_1           |                1 |              1 |
+|  Clk_CPU_BUFG                    | PC[31]_i_1_n_1          | PC_reg[8]_LDC_i_1_n_1           |                1 |              1 |
+|  PC_reg[10]_LDC_i_1_n_1          |                         | PC_reg[10]_LDC_i_2_n_1          |                1 |              1 |
+|  PC_reg[7]_LDC_i_1_n_1           |                         | PC_reg[7]_LDC_i_2_n_1           |                1 |              1 |
+|  PC_reg[4]_LDC_i_1_n_1           |                         | PC_reg[4]_LDC_i_2_n_1           |                1 |              1 |
+|  PC_reg[6]_LDC_i_1_n_1           |                         | PC_reg[6]_LDC_i_2_n_1           |                1 |              1 |
+|  PC_reg[9]_LDC_i_1_n_1           |                         | PC_reg[9]_LDC_i_2_n_1           |                1 |              1 |
+|  PC_reg[5]_LDC_i_1_n_1           |                         | PC_reg[5]_LDC_i_2_n_1           |                1 |              1 |
+|  PC_reg[8]_LDC_i_1_n_1           |                         | PC_reg[8]_LDC_i_2_n_1           |                1 |              1 |
+|  U_RF/rf_reg[31][13]_LDC_i_1_n_1 |                         | U_RF/rf_reg[31][13]_LDC_i_2_n_1 |                1 |              1 |
+|  U_RF/rf_reg[31][10]_LDC_i_1_n_1 |                         | U_RF/rf_reg[31][10]_LDC_i_2_n_1 |                1 |              1 |
+|  U_RF/rf_reg[31][0]_LDC_i_1_n_1  |                         | U_RF/rf_reg[31][0]_LDC_i_2_n_1  |                1 |              1 |
+|  U_RF/rf_reg[31][12]_LDC_i_1_n_1 |                         | U_RF/rf_reg[31][12]_LDC_i_2_n_1 |                1 |              1 |
+|  U_RF/rf_reg[31][14]_LDC_i_1_n_1 |                         | U_RF/rf_reg[31][14]_LDC_i_2_n_1 |                1 |              1 |
+|  U_RF/rf_reg[31][11]_LDC_i_1_n_1 |                         | U_RF/rf_reg[31][11]_LDC_i_2_n_1 |                1 |              1 |
+|  U_RF/rf_reg[31][19]_LDC_i_1_n_1 |                         | U_RF/rf_reg[31][19]_LDC_i_2_n_1 |                1 |              1 |
+|  U_RF/rf_reg[31][20]_LDC_i_1_n_1 |                         | U_RF/rf_reg[31][20]_LDC_i_2_n_1 |                1 |              1 |
+|  U_RF/rf_reg[31][17]_LDC_i_1_n_1 |                         | U_RF/rf_reg[31][17]_LDC_i_2_n_1 |                1 |              1 |
+|  U_RF/rf_reg[31][25]_LDC_i_1_n_1 |                         | U_RF/rf_reg[31][25]_LDC_i_2_n_1 |                1 |              1 |
+|  U_RF/rf_reg[31][26]_LDC_i_1_n_1 |                         | U_RF/rf_reg[31][26]_LDC_i_2_n_1 |                1 |              1 |
+|  U_RF/rf_reg[31][1]_LDC_i_1_n_1  |                         | U_RF/rf_reg[31][1]_LDC_i_2_n_1  |                1 |              1 |
+|  U_RF/rf_reg[31][18]_LDC_i_1_n_1 |                         | U_RF/rf_reg[31][18]_LDC_i_2_n_1 |                1 |              1 |
+|  U_RF/rf_reg[31][16]_LDC_i_1_n_1 |                         | U_RF/rf_reg[31][16]_LDC_i_2_n_1 |                1 |              1 |
+|  U_RF/rf_reg[31][22]_LDC_i_1_n_1 |                         | U_RF/rf_reg[31][22]_LDC_i_2_n_1 |                1 |              1 |
+|  U_RF/rf_reg[31][15]_LDC_i_1_n_1 |                         | U_RF/rf_reg[31][15]_LDC_i_2_n_1 |                1 |              1 |
+|  U_RF/rf_reg[31][21]_LDC_i_1_n_1 |                         | U_RF/rf_reg[31][21]_LDC_i_2_n_1 |                1 |              1 |
+|  U_RF/rf_reg[31][23]_LDC_i_1_n_1 |                         | U_RF/rf_reg[31][23]_LDC_i_2_n_1 |                1 |              1 |
+|  U_RF/rf_reg[31][24]_LDC_i_1_n_1 |                         | U_RF/rf_reg[31][24]_LDC_i_2_n_1 |                1 |              1 |
+|  U_RF/rf_reg[31][27]_LDC_i_1_n_1 |                         | U_RF/rf_reg[31][27]_LDC_i_2_n_1 |                1 |              1 |
+|  U_RF/rf_reg[31][8]_LDC_i_1_n_1  |                         | U_RF/rf_reg[31][8]_LDC_i_2_n_1  |                1 |              1 |
+|  U_RF/rf_reg[31][9]_LDC_i_1_n_1  |                         | U_RF/rf_reg[31][9]_LDC_i_2_n_1  |                1 |              1 |
+|  U_RF/rf_reg[31][4]_LDC_i_1_n_1  |                         | U_RF/rf_reg[31][4]_LDC_i_2_n_1  |                1 |              1 |
+|  U_RF/rf_reg[31][7]_LDC_i_1_n_1  |                         | U_RF/rf_reg[31][7]_LDC_i_2_n_1  |                1 |              1 |
+|  U_RF/rf_reg[31][3]_LDC_i_1_n_1  |                         | U_RF/rf_reg[31][3]_LDC_i_2_n_1  |                1 |              1 |
+|  U_RF/rf_reg[31][29]_LDC_i_1_n_1 |                         | U_RF/rf_reg[31][29]_LDC_i_2_n_1 |                1 |              1 |
+|  U_RF/rf_reg[31][6]_LDC_i_1_n_1  |                         | U_RF/rf_reg[31][6]_LDC_i_2_n_1  |                1 |              1 |
+|  U_RF/rf_reg[31][28]_LDC_i_1_n_1 |                         | U_RF/rf_reg[31][28]_LDC_i_2_n_1 |                1 |              1 |
+|  U_RF/rf_reg[31][2]_LDC_i_1_n_1  |                         | U_RF/rf_reg[31][2]_LDC_i_2_n_1  |                1 |              1 |
+|  U_RF/rf_reg[31][5]_LDC_i_1_n_1  |                         | U_RF/rf_reg[31][5]_LDC_i_2_n_1  |                1 |              1 |
+|  U_RF/rf_reg[31][31]_LDC_i_1_n_1 |                         | U_RF/rf_reg[31][31]_LDC_i_2_n_1 |                1 |              1 |
+|  Clk_CPU_BUFG                    |                         | PC_reg[3]_LDC_i_2_n_1           |                1 |              2 |
+|  Clk_CPU_BUFG                    | PC[31]_i_1_n_1          | PC_reg[3]_LDC_i_1_n_1           |                1 |              2 |
+|  u_seg7x16/seg7_clk              |                         | U_RF/rstn                       |                1 |              3 |
+|  Clk_CPU_BUFG                    | sw_i_IBUF[0]            | U_RF/rstn                       |                2 |              6 |
+|  Clk_CPU_BUFG                    | p_0_in                  | U_RF/rstn                       |                2 |              7 |
+| ~Clk_CPU_BUFG                    | U_alu/dmem[62][3]_i_1_0 | U_alu/dmem[1][7]_i_3_0          |                5 |              8 |
+| ~Clk_CPU_BUFG                    |                         | U_DM/dout[31]_i_1_n_1           |                7 |             16 |
+|  Clk_CPU_BUFG                    | sw_i_IBUF[11]           | U_RF/rstn                       |               10 |             21 |
+|  Clk_CPU_BUFG                    | PC[31]_i_1_n_1          | U_RF/rstn                       |               15 |             23 |
+|  Clk_CPU_BUFG                    | reg_data                |                                 |               25 |             29 |
+|  Clk_CPU_BUFG                    | rom_addr[29]_i_1_n_1    | U_RF/rstn                       |               10 |             30 |
+|  Clk_CPU_BUFG                    | rstn_IBUF               |                                 |               24 |             32 |
+|  clk_IBUF_BUFG                   |                         | U_RF/rstn                       |               37 |            114 |
+| ~Clk_CPU_BUFG                    | U_DM/EXTOp[0]           |                                 |              139 |            152 |
+| ~Clk_CPU_BUFG                    |                         |                                 |              356 |            392 |
+|  Clk_CPU_BUFG                    |                         | U_RF/rstn                       |              385 |            996 |
++----------------------------------+-------------------------+---------------------------------+------------------+----------------+
+
+

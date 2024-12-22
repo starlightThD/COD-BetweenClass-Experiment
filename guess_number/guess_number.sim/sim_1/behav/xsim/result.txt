@@ -1,0 +1,10 @@
+led_o:	 1zzzzzzzzzzzzzzz
+led_o:	 1zzzzzzzzzzzzzzz
+led_o:	 0zzzzzzzzzzzzzzz
+led_o:	 0zzzzzzzzzzzzzzz
+led_o:	 0zzzzzzzzzzzzzzz
+led_o:	 0zzzzzzzzzzzzzzz
+led_o:	 0zzzzzzzzzzzzzzz
+led_o:	 0zzzzzzzzzzzzzzz
+led_o:	 0zzzzzzzzzzzzzzz
+led_o:	 0zzzzzzzzzzzzzzz

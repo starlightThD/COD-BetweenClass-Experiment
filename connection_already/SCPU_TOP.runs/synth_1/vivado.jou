@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sat Dec 21 08:22:59 2024
+# Process ID: 7208
+# Current directory: C:/Users/ThD/Desktop/com_con/connection_already/SCPU_TOP.runs/synth_1
+# Command line: vivado.exe -log SCPU_TOP.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source SCPU_TOP.tcl
+# Log file: C:/Users/ThD/Desktop/com_con/connection_already/SCPU_TOP.runs/synth_1/SCPU_TOP.vds
+# Journal file: C:/Users/ThD/Desktop/com_con/connection_already/SCPU_TOP.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source SCPU_TOP.tcl -notrace

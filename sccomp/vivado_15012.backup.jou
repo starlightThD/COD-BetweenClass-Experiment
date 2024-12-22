@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sun Nov 24 14:50:09 2024
+# Process ID: 15012
+# Current directory: C:/Users/ThD/Desktop/com_con/sccomp
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15240 C:\Users\ThD\Desktop\com_con\sccomp\sccomp.xpr
+# Log file: C:/Users/ThD/Desktop/com_con/sccomp/vivado.log
+# Journal file: C:/Users/ThD/Desktop/com_con/sccomp\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/ThD/Desktop/com_con/sccomp/sccomp.xpr
+update_compile_order -fileset sources_1

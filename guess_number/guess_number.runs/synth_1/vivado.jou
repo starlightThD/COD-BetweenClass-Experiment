@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sun Nov 24 16:42:55 2024
+# Process ID: 2632
+# Current directory: C:/Users/ThD/Desktop/com_con/guess_number/guess_number.runs/synth_1
+# Command line: vivado.exe -log guess_number_pro.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source guess_number_pro.tcl
+# Log file: C:/Users/ThD/Desktop/com_con/guess_number/guess_number.runs/synth_1/guess_number_pro.vds
+# Journal file: C:/Users/ThD/Desktop/com_con/guess_number/guess_number.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source guess_number_pro.tcl -notrace

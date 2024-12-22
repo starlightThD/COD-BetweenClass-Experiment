@@ -1,0 +1,9 @@
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+C:/Users/ThD/Desktop/com_con/SCPU_TOP/SCPU_TOP.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+C:/Users/ThD/Desktop/com_con/SCPU_TOP/SCPU_TOP.srcs/sim_1/new/SCPU_TOP_tb.v,1732415812,verilog,,,,SCPU_TOP_tb,,,,,,,,
+C:/Users/ThD/Desktop/com_con/SCPU_TOP/SCPU_TOP.srcs/sources_1/ip/dist_mem_im/sim/dist_mem_im.v,1732408894,verilog,,C:/Users/ThD/Desktop/com_con/SCPU_TOP/SCPU_TOP.srcs/sources_1/new/SCPU_TOP.v,,dist_mem_im,,,,,,,,
+C:/Users/ThD/Desktop/com_con/SCPU_TOP/SCPU_TOP.srcs/sources_1/new/SCPU_TOP.v,1732416352,verilog,,C:/Users/ThD/Desktop/com_con/SCPU_TOP/SCPU_TOP.srcs/sources_1/new/seg7x16.v,,SCPU_TOP,,,,,,,,
+C:/Users/ThD/Desktop/com_con/SCPU_TOP/SCPU_TOP.srcs/sources_1/new/seg7x16.v,1732380187,verilog,,C:/Users/ThD/Desktop/com_con/SCPU_TOP/SCPU_TOP.srcs/sim_1/new/SCPU_TOP_tb.v,,seg7x16,,,,,,,,
